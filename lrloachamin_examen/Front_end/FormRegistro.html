@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Nuevo Socio</title>
+    <meta name="viewport" content="width=device-width, user-scaleble=no,
+    initial-scale=1, maximum-scale=1,minimum-scale=1">
+    <link rel="stylesheet" href="Recursos/MisEstilos.css">
+    <script src="validar.js"></script>
+  </head>
+  <body>
+    <form class="" action="../Back_end/php/registrar.php" method="post" onsubmit="validar()" onclick="this.form.submit()">
+      <h2>Nuevo Socio</h2>
+	<p>Nombre</p>
+      <input type="text" id="txtNombre" name="txtNombre" required>
+		<p>Apellido</p>
+      <input type="text" id="txtApellido" name="txtApellido"  required>
+		<p>Cedula</p>
+      <input type="text" id="txtCedula" name="txtCedula" required>
+      <p>Usuario</p>
+      <input type="text" id="txtUsuario" name="txtUsuario" required>
+      <p>Contraseña</p>
+      <input type="password" id="txtPass" name="txtPass" required>
+      <p>Teléfono</p>
+      <input type="text" id="txtTelefono" name="txtTelefono" placeholder="&#9742; Telefono" required>
+      <input type="submit" id="btnEnviar" value="Enviar" >
+    </form>
+  </body>
+</html>
